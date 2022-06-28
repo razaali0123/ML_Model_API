@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>A basic HTML table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Timestamp</th>
+    <th>data</th>
+    <th>Predicitons</th>
+  </tr>
+  {% for row in data %}
+  <tr>
+    <td>{{row[0]}}</td>
+    <td>{{row[1]}}</td>
+    <td>{{row[2]}}</td>
+  </tr>
+  {% endfor %}  
+</table>
+
+
+</body>
+</html>
+
